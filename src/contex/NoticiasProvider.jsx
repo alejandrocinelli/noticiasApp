@@ -15,7 +15,7 @@ const NoticiasProvider = ({ children }) => {
          const url = `https://newsapi.org/v2/top-headlines?country=ar&category=${categoria}&apiKey=${import.meta.env.VITE_API_KEY}`
          const respuesta = await fetch(url)
          const data = await respuesta.json()
-         console.log(data)
+       //  console.log(data)
          setNoticias(data.articles)
      }
 
